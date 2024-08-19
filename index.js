@@ -12,6 +12,11 @@ app.use("/discord", (req, res) => {
   res.redirect("https://discord.gg/49tgKgJx9z");
 });
 
+// hwhelp redirect,
+app.use("/hwhelp", (req, res) => {
+  res.redirect("/");
+});
+
 //search queries
 app.get("/api/search=:query", async (req, res) => {
   const { query } = req.params;
