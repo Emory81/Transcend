@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Transend" />
+    <meta name="description" content="Fast, easy to use and best proxy to use." />
+    <title id="title">Transcend | Apps</title>
+    <link rel="icon" id="favicon" href="./imgs/icons/default.ico" type="image/png" />
+    <link rel="stylesheet" href="dark.css" id="dark-styles" />
+    <link rel="stylesheet" href="light.css" id="light-styles" />
+    <script type="text/javascript" src="//moustacheoverloadwar.com/de/f1/4d/def14d0ee3de5a1ee8d5433263c19bf5.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-452YYLWNM2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-452YYLWNM2");
+    </script>
+  </head>
+
+  <body>
+    <style>
+      .navbar {
+        flex-direction: row;
+        top: 50px;
+        width: 5%;
+        border-radius: 20px;
+        position: fixed;
+        z-index: 10000;
+        left: 50%;
+        background: transparent;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+      }
+
+      .navbarAlign {
+        text-align: center;
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%, 0);
+        display: flex;
+      }
+
+      .navbarLink {
+        height: 26px;
+        border-radius: 20px;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        cursor: pointer;
+        justify-content: flex-end;
+        transition: 0.3s;
+        padding: 5px;
+        box-shadow: 0 0 15px 1px var(--primary-color), 0 0 1px 1px var(--secondary-color);
+        background-color: #1e2832;
+        transform: translateY(-3px);
+        color: #1a5276;
+      }
+
+      .navbarLink img {
+        width: 50px;
+        display: inline-flex;
+        margin-left: 1px;
+        height: auto;
+        transition: 1s;
+      }
+
+      .navbarLink:hover {
+        background-color: #2a3745;
+      }
+
+      .navbarLink:hover img {
+        animation: rotate 0.5s ease-in-out;
+        transition: all 0.3s ease-in-out;
+      }
+    </style>
+    <div class="navbar">
+      <div class="navbarAlign">
+        <a href="/"><img src="/school/home.png" class="navbarLink" style="animation: fadeIn 2s;" /></a>
+        <a href="/games.html"><img src="/school/game.png" class="navbarLink" style="animation: fadeIn 2s;" /></a>
+        <a href="/apps.html"><img src="/school/apps.png" class="navbarLink" style="animation: fadeIn 2s;" /></a>
+        <a href="/settings.html"><img src="/school/settings.png" class="navbarLink" style="animation: fadeIn 2s;" /></a>
+        <a href="/discord.html"><img src="/school/discord.png" class="navbarLink" style="animation: fadeIn 2s;" /></a>
+      </div>
+    </div>
+
+    <div class="appcontainer" id="appsGrid"></div>
+    <script>
+      addEventListener("DOMContentLoaded", async (event) => {
+        const responce = await fetch("/school/apps.json");
+        const gameData = await responce.json();
+        gameData.forEach((game) => {
+          const gameicons = document.getElementById("appsGrid");
+
+          const games = document.createElement("div");
+          games.classList.add("card");
+          games.setAttribute("onclick", "location.href = __uv$config.prefix + __uv$config.encodeUrl('" + game.link + "');");
+
+          const gameimage = document.createElement("img");
+          gameimage.src = game.image;
+          gameimage.height = "100";
+          gameimage.style.borderradius = "10px";
+
+          const gamename = document.createElement("p");
+          gamename.innerText = game.name;
+
+          games.appendChild(gameimage);
+          games.appendChild(gamename);
+          gameicons.appendChild(games);
+        });
+      });
+    </script>
+    <script src="/uv/uv.bundle.js"></script>
+    <script src="/uv/uv.config.js"></script>
+    <script src="/school/js/index.js"></script>
+    <script src="/school/js/main.js"></script>
+  </body>
+</html>

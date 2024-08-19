@@ -1,0 +1,17 @@
+{
+  "name": "Transend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Emory",
+  "type": "module",
+  "license": "ISC",
+  "description": "Proxy server for Transend",
+  "dependencies": {
+    "@tomphttp/bare-server-node": "2.0.3",
+    "express": "^4.19.2"
+  }
+}

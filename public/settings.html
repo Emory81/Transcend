@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Transend" />
+    <meta name="description" content="Fast, easy to use and best proxy to use." />
+    <link rel="icon" id="favicon" href="./imgs/icons/default.ico" type="image/png" />
+    <title id="title">Transcend | Settings</title>
+    <link rel="stylesheet" href="./dark.css" id="dark-styles" />
+    <link rel="stylesheet" href="./light.css" id="light-styles" />
+  </head>
+  <body>
+    <style>
+      .navbar {
+        flex-direction: row;
+        top: 50px;
+        width: 5%;
+        border-radius: 20px;
+        position: fixed;
+        z-index: 10000;
+        left: 50%;
+        background: transparent;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+      }
+      .navbarAlign {
+        text-align: center;
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%, 0);
+        display: flex;
+      }
+
+      .navbarLink {
+        height: 26px;
+        border-radius: 20px;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        cursor: pointer;
+        justify-content: flex-end;
+        transition: 0.3s;
+        padding: 5px;
+        box-shadow: 0 0 15px 1px var(--primary-color), 0 0 1px 1px var(--secondary-color);
+        background-color: #1e2832;
+        transform: translateY(-3px);
+        color: #1a5276;
+      }
+
+      .navbarLink img {
+        width: 50px;
+        display: inline-flex;
+        margin-left: 1px;
+        height: auto;
+        transition: 1s;
+      }
+
+      .navbarLink:hover {
+        background-color: #2a3745;
+      }
+
+      .navbarLink:hover img {
+        animation: rotate 0.5s ease-in-out;
+        transition: all 0.3s ease-in-out;
+      }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-452YYLWNM2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-452YYLWNM2");
+    </script>
+    <div class="navbar">
+      <div class="navbarAlign">
+        <a href="/"><img src="/school/home.png" class="navbarLink" style="animation: fadeIn 2s;" /></a>
+        <a href="/games.html"><img src="/school/game.png" class="navbarLink" style="animation: fadeIn 2s;" /></a>
+        <a href="/apps.html"><img src="/school/apps.png" class="navbarLink" style="animation: fadeIn 2s;" /></a>
+        <a href="/settings.html"><img src="/school/settings.png" class="navbarLink" style="animation: fadeIn 2s;" /></a>
+        <a href="/discord"><img src="/school/discord.png" class="navbarLink" style="animation: fadeIn 2s;" /></a>
+      </div>
+    </div>
+    <div class="settingcontainer">
+      <div class="setting">
+        <h1>Theming Dark / Light</h1>
+        <p>
+          Change how our proxy looks! Pick the best style for you!
+        </p>
+        <select id="backgroundToggle" class="settingsdropdown">
+          <optgroup label="Dark Mode">
+            <option value="dark1">Dark Background 1</option>
+            <option value="dark2">Dark Background 2</option>
+          </optgroup>
+          <optgroup label="Light Mode">
+            <option value="light1">Light Background 1</option>
+            <option value="light2">Light Background 2</option>
+          </optgroup>
+        </select>
+      </div>
+      <div class="setting">
+        <h1>About:Blank</h1>
+        <p>Automatic and manual cloaking!</p>
+
+        <label class="switch">
+          <input id="autoOpenCheckbox" type="checkbox" onchange="toggleAutoOpen()" />
+          <span class="slider"></span>
+        </label>
+        <button onclick="blank()">Open Popup</button>
+      </div>
+
+      <div class="setting">
+        <h1>Tab Cloaker</h1>
+        <p>Cloak the tab to your icon and title of choice!</p>
+
+        <select id="cloakSelect" class="settingsdropdown">
+          <option value="blank">Blank</option>
+          <option value="google">Google</option>
+          <option value="clever">Clever</option>
+          <option value="edpuzzle">Edpuzzle</option>
+          <option value="getepic">Epic!</option>
+          <option value="ic">Infinite Campus</option>
+          <option value="IXL">IXL</option>
+          <option value="nearpod">Nearpod</option>
+          <option value="prodigy">Prodigy</option>
+          <option value="quiz">Quizizz</option>
+          <option value="school">Schoology</option>
+        </select>
+
+        <button onclick="saveCloakSettings()">Save</button>
+        <button onclick="resetCloak()">Reset Cloak</button>
+      </div>
+
+      <div class="setting">
+        <h1>Panic Key</h1>
+        <p>
+          Set a key and url to redirect when pressed!
+        </p>
+        <button onclick="recordkey()">Select Key</button>
+        <input type="text" placeholder="Put In a Redirect URL." class="setting-input__input" id="URLinput" />
+        <button style="margin-top: 10px;" onclick="savekey()">Save</button>
+      </div>
+
+      <div class="setting">
+        <h1>Search Engine</h1>
+        <p>Pick the search engine of your choice!</p>
+        <select style="margin-bottom: 7px;" class="settingsdropdown" id="engineSwitcher">
+          <option value="https://duckduckgo.com/?q=">DuckDuckGo (Default)</option>
+          <option value="https://www.google.com/search?q=">Google</option>
+          <option value="https://www.bing.com/search?q=">Bing</option>
+          <option value="https://search.yahoo.com/search?p=">Yahoo</option>
+          <option value="https://search.brave.com/search?q=">Brave</option>
+          <option value="https://www.ecosia.org/search?q=">Ecosia</option>
+        </select>
+        <div class="setting-input"></div>
+        <button onclick="saveEngine();" id="searchSave">
+          Save
+        </button>
+      </div>
+
+      <div class="setting">
+        <h1>Update info</h1>
+        <p>Version: 1.0</p>
+        <p>
+          Having problems? Have a Suggestion? Need More Friends? <br />
+          Join the
+          <a style="text-decoration: underline;" href="/discord">Discord</a>!
+          Check out our project on <a href="https://github.com/your-repo" target="_blank">GitHub</a>!
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="/school/js/settings.js" defer></script>
+  <script src="/school/js/main.js"></script>
+</html>

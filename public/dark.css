@@ -1,0 +1,435 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+* {
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --primary-color: #d35400;
+  --secondary-color: #27ae60;
+  --background-color: #34495e;
+  --text-color: #bdc3c7;
+}
+
+body {
+  top: 50%;
+  font-family: Poppins;
+  color: var(--text-color);
+  background-image: url("/school/dark1.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  transition: 0.5s;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.app {
+  padding-top: 1.5vh;
+  width: 200px;
+  height: 180px;
+  border-radius: 7px;
+  z-index: 1111;
+  overflow: hidden;
+  background: linear-gradient(rgba(148, 148, 148, 0.2), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(15px);
+  box-shadow: inset 0 0 10px rgba(141, 141, 141, 0.2);
+  border: 1px solid white;
+  transition: width 0.3s ease-out, height 0.3s ease-out, background-color 0.5s ease, box-shadow 0.3s ease;
+}
+
+.app img {
+  border-radius: 10px;
+}
+
+.app p {
+  margin-bottom: -5px;
+  margin-top: 2px;
+  font-size: 15px;
+  color: #b6bab7;
+}
+
+.app:hover {
+  width: calc(200px * 1.05);
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 0 20px rgba(141, 141, 141, 0.4);
+}
+
+.appcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1vw;
+  margin-top: 12vh;
+}
+
+.card {
+  padding-top: 1.5vh;
+  width: 200px;
+  height: 180px;
+  border-radius: 7px;
+  z-index: 1111;
+  overflow: hidden;
+  background: linear-gradient(rgba(148, 148, 148, 0.2), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(15px);
+  box-shadow: inset 0 0 10px rgba(141, 141, 141, 0.2);
+  border: 1px solid white;
+  transition: width 0.3s ease-out, height 0.3s ease-out, background-color 0.5s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  border-radius: 10px;
+}
+
+.card:hover {
+  width: calc(200px * 1.05);
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 0 20px rgba(141, 141, 141, 0.4);
+}
+
+.searchbar {
+  font-size: 14px;
+  font-family: Poppins, sans-serif;
+  color: #202124;
+  display: flex;
+  z-index: 3;
+  height: 44px;
+  background: linear-gradient(rgba(148, 148, 148, 0.2), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(15px);
+  box-shadow: inset 0 0 10px rgba(141, 141, 141, 0.2);
+  box-shadow: none;
+  border-radius: 24px;
+  margin: 0 auto;
+  min-width: 200px;
+  width: 1250px;
+  transition: 0.5s;
+  margin-top: 7px;
+}
+
+.searchbar-wrapper {
+  flex: 1;
+  display: flex;
+  padding: 5px 8px 0 14px;
+}
+
+.searchbar-left {
+  font-size: 14px;
+  font-family: Poppins;
+  color: #202124;
+  display: flex;
+  align-items: center;
+  padding-right: 13px;
+  margin-top: -5px;
+}
+
+.search-icon-wrapper {
+  margin: auto;
+}
+
+.search-icon {
+  margin-top: 3px;
+  color: #9aa0a6;
+  height: 20px;
+  line-height: 20px;
+  width: 20px;
+}
+
+.searchbar-icon {
+  display: inline-block;
+  fill: currentColor;
+  height: 24px;
+  line-height: 24px;
+  position: relative;
+  width: 24px;
+}
+
+.searchbar-center {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.searchbar-input-spacer {
+  color: transparent;
+  flex: 100%;
+  white-space: pre;
+  height: 35px;
+  font-size: 16px;
+}
+
+.searchbar-input {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.87);
+  word-wrap: break-word;
+  outline: none;
+  display: flex;
+  flex: 100%;
+  margin-top: -37px;
+  height: 34px;
+  font-size: 16px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.searchbar-input {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  color: var(--theme-color);
+  word-wrap: break-word;
+  outline: none;
+  display: flex;
+  flex: 100%;
+  margin-top: -37px;
+  height: 34px;
+  font-size: 16px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.searchbar-right {
+  display: flex;
+  flex: 0 0 auto;
+  margin-top: -5px;
+  align-items: stretch;
+  flex-direction: row;
+}
+
+.searchbar-clear-icon {
+  margin-right: 12px;
+}
+
+/* Settings*/
+
+.setting {
+  width: 450px;
+  height: auto;
+  padding: 17px;
+  text-align: left;
+  border-radius: 5px;
+  background: linear-gradient(rgba(148, 148, 148, 0.2), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(15px);
+  box-shadow: inset 0 0 10px rgba(141, 141, 141, 0.2);
+  transition: width 0.3s ease-out, height 0.3s ease-out, background-color 0.5s ease, box-shadow 0.3s ease;
+  animation: fadeIn 1s;
+}
+
+.setting p {
+  margin-bottom: 10px;
+  margin-top: -6px;
+  font-size: 15px;
+  color: rgb(196, 196, 196);
+}
+
+.setting h1,
+.setting h3 {
+  color: #ffffff;
+  margin-top: 0;
+  font-size: 22px;
+}
+
+.setting:hover {
+  width: calc(450px * 1.03);
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 0 20px rgba(141, 141, 141, 0.4);
+}
+
+.settingcontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5vw;
+  margin-top: 90px;
+}
+
+.settingcontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5vw;
+  margin-top: 90px;
+  transition: transform 0.3s ease-out, background-color 0.5s ease;
+  animation: fadeIn 1s;
+}
+
+.switch {
+  top: -2%;
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #707070;
+  transition: 0.2s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 20px;
+  left: 0.3em;
+  bottom: 0.3em;
+  background-color: white;
+  transition: 0.2s;
+}
+
+input:checked + .slider {
+  background-color: #32cd32;
+}
+
+input:checked + .slider:before {
+  transform: translateX(1.5em);
+}
+
+button {
+  justify-content: center;
+  appearance: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(25px);
+  box-shadow: inset 0 0 10px rgba(141, 141, 141, 0.2);
+  border: 0.125em solid rgb(228, 228, 228);
+  border-radius: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  line-height: normal;
+  min-height: 3em;
+  min-width: 48%;
+  outline: none;
+  margin-left: 1%;
+  margin-bottom: 2%;
+  padding: 1em 1.5em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+  color: white;
+}
+
+button:hover {
+  color: #32cd32;
+  background: none;
+  backdrop-filter: blur(20px);
+  transform: translateY(-2px);
+}
+
+button:active {
+  box-shadow: none;
+  transform: translateY(0);
+  border: 1px solid var(--shadow-color);
+}
+
+.setting-input {
+  align-items: center;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.setting-input__input {
+  font-family: inherit;
+  font-size: 16px;
+  border: none;
+  background-color: #ffffff1a;
+  outline: 1px solid #ffffff;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  width: 90%;
+  height: 24px;
+  opacity: 1;
+  text-align: center;
+  color: white;
+}
+
+.setting-input__input::placeholder {
+  color: white;
+}
+
+.setting-input__input:focus {
+  outline: none;
+}
+
+.settingsdropdown {
+  background-color: #000;
+  border: none;
+  color: #fff;
+  align-items: center;
+  height: 46px;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 5px;
+  margin-left: 1.4%;
+  font-size: 16px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.settingsdropdown:focus {
+  outline: none;
+}
+
+.picker {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 32px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.picker::-webkit-color-swatch {
+  border-radius: 15px;
+  border: none;
+}
+
+.picker::-moz-color-swatch {
+  border-radius: 15px;
+  border: none;
+}
+
+.picker:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+#sett:hover {
+  transform: translate(-360deg);
+}

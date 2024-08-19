@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Transend" />
+    <meta name="description" content="Best website for school" />
+    <title>Transcend | Home</title>
+    <link rel="stylesheet" href="dark.css" id="dark-styles" />
+    <link rel="stylesheet" href="./light.css" id="light-styles" />
+    <link rel="icon" id="favicon" href="./imgs/icons/default.ico" type="image/png" />
+    <style>
+      body {
+        font-family: Poppins;
+      }
+
+      .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 5%;
+        height: 80%;
+        border-radius: 20px;
+        padding: 0.9%;
+        position: fixed;
+        top: 30%;
+        z-index: 20;
+        left: 50%;
+        background: transparent;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+        transform: translate(-50%, -4vh);
+      }
+
+      .navbarAlign {
+        text-align: center;
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%, 0);
+        display: flex;
+      }
+
+      .navbarLink {
+        height: 26px;
+        border-radius: 20px;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        cursor: pointer;
+        justify-content: flex-end;
+        transition: 0.3s;
+        padding: 5px;
+        box-shadow: 0 0 15px 1px var(--primary-color), 0 0 1px 1px var(--secondary-color);
+        background-color: #1e2832;
+        transform: translateY(-3px);
+        color: #1a5276;
+      }
+
+      .navbarLink img {
+        width: 50px;
+        display: inline-flex;
+        margin-left: 1px;
+        height: auto;
+        transition: 1s;
+      }
+
+      .navbarLink:hover {
+        background-color: #2a3745;
+      }
+
+      .navbarLink:hover img {
+        animation: rotate 0.5s ease-in-out;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .time-container {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        text-align: center;
+        width: 40px;
+        height: 40px;
+      }
+
+      #time-display {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 12px;
+        color: #fff;
+      }
+
+      .circle {
+        fill: none;
+        stroke: #4caf50;
+        stroke-width: 2;
+        stroke-dasharray: 119.38052;
+        stroke-dashoffset: 119.38052;
+        transition: stroke-dashoffset 0.1s linear;
+        offset-rotate: 90deg;
+      }
+
+      .searchbar {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+        border: 1px solid white;
+        color: white;
+      }
+
+      #splash-text {
+        position: fixed;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+        font-size: 12px;
+        color: #fff;
+        opacity: 1;
+        transition: opacity 0.5s;
+        font-family: Poppins;
+      }
+
+      .input {
+        width: 55vw;
+        height: 3vh;
+        border-radius: 10px;
+        background: transparent;
+        border: none;
+        outline: transparent;
+        color: white;
+      }
+
+      .searchbar {
+        font-size: 14px;
+        font-family: Poppins, sans-serif;
+        color: #202124;
+        z-index: 30;
+        height: 44px;
+        background: linear-gradient(rgba(148, 148, 148, 0.2), rgba(255, 255, 255, 0));
+        backdrop-filter: blur(15px);
+        box-shadow: inset 0 0 10px rgba(141, 141, 141, 0.2);
+        box-shadow: none;
+        border-radius: 24px;
+        margin: 0 auto;
+        min-width: 200px;
+        width: 85%;
+        transition: 0.5s;
+        margin-top: 7px;
+      }
+
+      .searchbar-wrapper {
+        flex: 1;
+        display: flex;
+        padding: 5px 8px 0 14px;
+      }
+
+      .searchbar-left {
+        font-size: 14px;
+        font-family: Poppins;
+        color: #202124;
+        display: flex;
+        align-items: center;
+        padding-right: 13px;
+        margin-top: -5px;
+      }
+
+      .search-icon-wrapper {
+        margin: auto;
+      }
+
+      .search-icon {
+        margin-top: 3px;
+        color: #9aa0a6;
+        height: 20px;
+        line-height: 20px;
+        width: 20px;
+      }
+
+      .searchbar-icon {
+        display: inline-block;
+        fill: currentColor;
+        height: 24px;
+        line-height: 24px;
+        position: relative;
+        width: 24px;
+      }
+
+      .searchbar-center {
+        display: flex;
+        flex: 1;
+        flex-wrap: wrap;
+      }
+
+      .searchbar-input-spacer {
+        color: transparent;
+        flex: 100%;
+        white-space: pre;
+        height: 35px;
+        font-size: 16px;
+      }
+
+      .searchbar-input {
+        background-color: transparent;
+        border: none;
+        margin: 0;
+        padding: 0;
+        color: rgba(0, 0, 0, 0.87);
+        word-wrap: break-word;
+        outline: none;
+        display: flex;
+        flex: 100%;
+        margin-top: -37px;
+        height: 34px;
+        font-size: 16px;
+        max-width: 100%;
+        width: 100%;
+      }
+
+      .searchbar-input {
+        background-color: transparent;
+        border: none;
+        margin: 0;
+        padding: 0;
+        color: var(--theme-color);
+        word-wrap: break-word;
+        outline: none;
+        display: flex;
+        flex: 100%;
+        margin-top: -37px;
+        height: 34px;
+        font-size: 16px;
+        max-width: 100%;
+        width: 100%;
+      }
+
+      .searchbar-right {
+        display: flex;
+        flex: 0 0 auto;
+        margin-top: -5px;
+        align-items: stretch;
+        flex-direction: row;
+      }
+
+      .searchbar-clear-icon {
+        margin-right: 12px;
+      }
+      .suggestions {
+        z-index: 1000;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        border-radius: 24px;
+        left: 0;
+        color: white;
+        background-color: var(--background-color);
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      }
+      .suggestions div {
+        padding: 10px;
+        border-bottom: 1px solid #e0e0e0;
+        cursor: pointer;
+      }
+
+      #suggestions .selected {
+        background-color: #ddd;
+        font-weight: bold;
+        color: black
+      }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-452YYLWNM2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-452YYLWNM2");
+    </script>
+  </head>
+  <body>
+    <div class="time-container">
+      <div id="time-display">Time</div>
+    </div>
+    <div class="navbar">
+      <div class="navbarAlign">
+        <a href="/"><img src="/school/home.png" class="navbarLink" style="animation: fadeIn 2s;" /></a>
+        <a href="/games.html"><img src="/school/game.png" class="navbarLink" style="animation: fadeIn 2s;" /></a>
+        <a href="/apps.html"><img src="/school/apps.png" class="navbarLink" style="animation: fadeIn 2s;" /></a>
+        <a href="/settings.html"><img src="/school/settings.png" class="navbarLink" style="animation: fadeIn 2s;" /></a>
+        <a href="/discord"><img src="/school/discord.png" class="navbarLink" style="animation: fadeIn 2s;" /></a>
+      </div>
+    </div>
+    <div id="splash-text" style="font-family: Poppins;">Loading...</div>
+    <h3 style="font-size: 25px;">Transend</h3>
+    <a href="https://freeminecrafthost.com">
+      <img style="display: block; margin: 0 auto; width: 50%; box-shadow: 0 0 8px 2px #00aeef; border-radius: 10px; cursor: pointer;" src="/school/banner.gif" />
+    </a>
+    <div class="searchbar">
+      <div class="searchbar-wrapper">
+        <div class="searchbar-left">
+          <div class="search-icon-wrapper">
+            <span class="search-icon searchbar-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v .79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div class="searchbar-input-spacer"><input type="text" class="input" id="uv-form" placeholder="Search or enter a URL" /></div>
+        <div id="suggestions" class="suggestions"></div>
+        <div class="desc left-margin" style="height: 50px; width: 20%;">
+          <p id="uv-error"></p>
+          <pre id="uv-error-code"></pre>
+        </div>
+        <div class="searchbar-input-spacer"></div>
+      </div>
+      <script>
+        function updateTime() {
+          const timeDisplay = document.getElementById("time-display");
+          const now = new Date();
+          const hours = String(now.getHours()).padStart(2, "0");
+          const minutes = String(now.getMinutes()).padStart(2, "0");
+          const seconds = String(now.getSeconds()).padStart(2, "0");
+          timeDisplay.textContent = `${hours}:${minutes}:${seconds}`;
+        }
+        setInterval(updateTime, 1000);
+        updateTime();
+
+        function rotateSplashText() {
+          var splashes = ["Transend?? How bout Sendtrans", "Blockgame", "that's cool! :D", "prox or no prox", "no prox", "So Silver", "eeny, meeny, miny, moe", "Echo was here...", "there are no bare clients", "*insert cool explosion*"];
+          var index = Math.floor(Math.random() * splashes.length);
+          var splashText = document.getElementById("splash-text");
+          splashText.style.opacity = 0;
+
+          setTimeout(function () {
+            splashText.textContent = splashes[index];
+            splashText.style.opacity = 1;
+          }, 500);
+          setTimeout(rotateSplashText, 4 * 1000);
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+          rotateSplashText();
+        });
+      </script>
+      <script src="/uv/uv.bundle.js"></script>
+      <script src="/uv/uv.config.js"></script>
+      <script src="./school/js/index.js"></script>
+      <script src="./school/js/main.js"></script>
+    </div>
+  </body>
+</html>
