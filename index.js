@@ -17,6 +17,11 @@ app.use("/hwhelp", (req, res) => {
   res.redirect("/");
 });
 
+app.get('/links', (req, res) => {
+  const domain = req.query.domain;
+  res.sendStatus(200);
+});
+
 //search queries
 app.get("/api/search=:query", async (req, res) => {
   const { query } = req.params;
