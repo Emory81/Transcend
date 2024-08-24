@@ -91,7 +91,7 @@
   },
   {
     "name": "Rooftop Snipers",
-    "link": "https://h52304.github.io/s/rooftop-snipers/",
+    "link": "https://htmlxm.github.io/h/rooftop-snipers/",
     "image": "/imgs/g/rooftopsnipers.png",
     "categories": ["all"]
   },
@@ -139,13 +139,13 @@
   },
   {
     "name": "Eaglercraft v1.8",
-    "link": "https://mcv18.netlify.app/",
+    "link": "https://eaglercraft.com/mc/1.8.8/",
     "image": "/imgs/g/eaglr.png",
     "categories": ["all", "popular", "multiplayer"]
   },
   {
     "name": "Eaglercraft v1.5.2",
-    "link": "https://mcv152.netlify.app/",
+    "link": "https://eaglercraft.com/mc/1.5.2/",
     "image": "/imgs/g/eaglr.png",
     "categories": ["all", "popular", "multiplayer"]
   },
