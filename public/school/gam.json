@@ -20,7 +20,7 @@
   {
     "name": "3D Dino Game",
     "link": "https://lagged.com/api/play2/t-rex-3d2/",
-    "image": "/imgs/g/3ddinogame.jpeg",
+    "image": "/imgs/g/3ddinogame.png",
     "categories": ["all"]
   },
   {
@@ -74,7 +74,7 @@
   {
     "name": "Basketball Stars",
     "link": "https://html5.gamedistribution.com/69d78d071f704fa183d75b4114ae40ec/",
-    "image": "/imgs/g/basketballstars.jpeg",
+    "image": "/imgs/g/basketballstars.png",
     "categories": ["all", "popular"]
   },
   {
@@ -320,7 +320,7 @@
   {
     "name": "Armed with Wings 3",
     "link": "https://www.silvergames.com/en/armed-with-wings-3/gameframe",
-    "image": "/imgs/g/armedwithwings3.jpeg",
+    "image": "/imgs/g/armedwithwings3.png",
     "categories": ["all"]
   },
   {
@@ -374,7 +374,7 @@
   {
     "name": "Granny",
     "link": "https://html5.gamemonetize.co/pm5wjn3np4xl59y8ie3a85xqs1m1nyma/",
-    "image": "/imgs/g/granny.jpeg",
+    "image": "/imgs/g/granny.png",
     "categories": ["all"]
   },
   {
@@ -446,7 +446,7 @@
   {
     "name": "Backrooms",
     "link": "https://backroomsgame.io/game/backrooms/",
-    "image": "/imgs/g/backrooms.jpeg",
+    "image": "/imgs/g/backrooms.png",
     "categories": ["all"]
   },
   {
@@ -470,7 +470,7 @@
   {
     "name": "Binding of Issac",
     "link": "https://f.kbhgames.com/RS/game.php?r=//f.kbhgames.com/2011/10/binding-of-issac.swf&w=800&h=600&warnsupport=true",
-    "image": "/imgs/g/bindingofissac.jpeg",
+    "image": "/imgs/g/bindingofissac.png",
     "categories": ["all"]
   },
   {
@@ -506,13 +506,13 @@
   {
     "name": "Fancy Pants Adventure: World 2",
     "link": "https://kdata1.com/2022/12/fancy-pants-adventure-3/?kbhgames",
-    "image": "/imgs/g/fancypantsadventureworld2.jpeg",
+    "image": "/imgs/g/fancypantsadventureworld2.png",
     "categories": ["all"]
   },
   {
     "name": "Fancy Pants Adventure: World 1",
     "link": "https://kbhgames.com/game/fancy-pants-adventures",
-    "image": "/imgs/g/fancypantsadventureworld1.jpeg",
+    "image": "/imgs/g/fancypantsadventureworld1.png",
     "categories": ["all"]
   },
   {
@@ -608,20 +608,20 @@
   {
     "name": "FNAF 4 (Scratch)",
     "link": "https://scratch.mit.edu/projects/88676888/embed/",
-    "image": "/imgs/g/fnaf4.jpeg",
+    "image": "/imgs/g/fnaf4.png",
     "categories": ["all"]
   },
 
   {
     "name": "Stumble Guys",
     "link": "https://www.stumbleguys.com/play",
-    "image": "/imgs/g/stumbleguys.jpeg",
+    "image": "/imgs/g/stumbleguys.png",
     "categories": ["all"]
   },
   {
     "name": "Crossy Road",
     "link": "https://h52304.github.io/s77/crossy-road/",
-    "image": "/imgs/g/crossyroad.jpeg",
+    "image": "/imgs/g/crossyroad.png",
     "categories": ["all"]
   },
   {
@@ -652,13 +652,13 @@
   {
     "name": "Precision Client",
     "link": "https://html-classic.itch.zone/html/7086310/PrecisionClient-Static-main/index.html",
-    "image": "/imgs/g/precisionclient.jpeg",
+    "image": "/imgs/g/precisionclient.png",
     "categories": ["all"]
   },
   {
     "name": "Idle Breakout",
     "link": "https://www.coolmathgames.com/0-idle-breakout/play",
-    "image": "/imgs/g/idlebreakout.jpeg",
+    "image": "/imgs/g/idlebreakout.png",
     "categories": ["all"]
   },
   {
@@ -670,13 +670,13 @@
   {
     "name": "Twitch Tetris",
     "link": "https://www.rossipotti.de/ausgabe28/tetris/index.html",
-    "image": "/imgs/g/twitchtetris.jpeg",
+    "image": "/imgs/g/twitchtetris.png",
     "categories": ["all"]
   },
   {
     "name": "Mario Kart 64",
     "link": "https://static.arcadespot.com/retroemulator.php?system=n64&game=2017/06/mario-kart-64.zip",
-    "image": "/imgs/g/mariokart64.jpeg",
+    "image": "/imgs/g/mariokart64.png",
     "categories": ["all", "emulator"]
   }
 ]
