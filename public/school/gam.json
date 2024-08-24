@@ -2,19 +2,19 @@
   {
     "name": "1v1.LOL",
     "link": "https://1v1.lol/",
-    "image": "/imgs/g/1v1lol.jpeg",
+    "image": "/imgs/g/1v1lol.png",
     "categories": ["all", "popular", "multiplayer"]
   },
   {
     "name": "2048",
     "link": "https://www.2048.org/",
-    "image": "/imgs/g/2048.jpeg",
+    "image": "/imgs/g/2048.png",
     "categories": ["all"]
   },
   {
     "name": "2048 Multitasking",
     "link": "https://calculatorgames.github.io/simplegimes/2048-multitask/index.html",
-    "image": "/imgs/g/2048multitasking.jpeg",
+    "image": "/imgs/g/2048multitasking.png",
     "categories": ["all"]
   },
   {
