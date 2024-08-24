@@ -444,6 +444,12 @@
     "categories": ["all", "popular"]
   },
   {
+    "name": "Vex 8",
+    "link": "https://html5.gamedistribution.com/rvvASMiM/949009d40a2846f89f887de2285d6c28/index.html?gd_sdk_referrer_url=https%3A%2F%2Farcadespot.com%2Fgame%2Fvex-8&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL2FyY2FkZXNwb3QuY29tL2dhbWUvdmV4LTgiLCJwYXJlbnREb21haW4iOiJhcmNhZGVzcG90LmNvbSIsInRvcERvbWFpbiI6ImFyY2FkZXNwb3QuY29tIiwiaGFzSW1wcmVzc2lvbiI6dHJ1ZSwibG9hZGVyRW5hYmxlZCI6dHJ1ZSwiaG9zdCI6Imh0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tIiwidmVyc2lvbiI6IjEuNS4xNyJ9",
+    "image": "/imgs/g/vex8.png",
+    "categories": ["all", "popular"]
+  },
+  {
     "name": "Backrooms",
     "link": "https://backroomsgame.io/game/backrooms/",
     "image": "/imgs/g/backrooms.png",
@@ -642,12 +648,6 @@
     "link": "https://static.arcadespot.com/retroemulator.php?system=gba&game=2015/10/pokemon-emerald.zip",
     "image": "/imgs/g/pokemonemerald.png",
     "categories": ["all", "emulator"]
-  },
-  {
-    "name": "Vex 8",
-    "link": "https://html5.gamedistribution.com/rvvASMiM/949009d40a2846f89f887de2285d6c28/index.html?gd_sdk_referrer_url=https%3A%2F%2Farcadespot.com%2Fgame%2Fvex-8&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL2FyY2FkZXNwb3QuY29tL2dhbWUvdmV4LTgiLCJwYXJlbnREb21haW4iOiJhcmNhZGVzcG90LmNvbSIsInRvcERvbWFpbiI6ImFyY2FkZXNwb3QuY29tIiwiaGFzSW1wcmVzc2lvbiI6dHJ1ZSwibG9hZGVyRW5hYmxlZCI6dHJ1ZSwiaG9zdCI6Imh0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tIiwidmVyc2lvbiI6IjEuNS4xNyJ9",
-    "image": "/imgs/g/vex8.png",
-    "categories": ["all", "popular"]
   },
   {
     "name": "Precision Client",
