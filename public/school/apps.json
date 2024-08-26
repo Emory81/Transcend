@@ -12,9 +12,9 @@
     "categories": ["all", "game"]
   },
   {
-    "name": "ClaudAI",
+    "name": "ClaudeAI",
     "link": "https://claude.ai/",
-    "image": "/imgs/a/claud.png",
+    "image": "/imgs/a/claude.png",
     "categories": ["all", "media", "popular", "ai"]
   },
   {
