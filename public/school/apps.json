@@ -18,12 +18,6 @@
     "categories": ["all", "game"]
   },
   {
-    "name": "Xbox Cloud Gaming",
-    "link": "https://www.xbox.com/en-us/play/",
-    "image": "/imgs/a/xboxcloud.png",
-    "categories": ["all", "game"]
-  },
-  {
     "name": "ClaudeAI (ChatGPT)",
     "link": "https://claude.ai/",
     "image": "/imgs/a/claude.png",
