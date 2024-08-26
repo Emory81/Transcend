@@ -12,9 +12,9 @@
     "categories": ["all", "game"]
   },
   {
-    "name": "OpenAI",
-    "link": "https://chat.openai.com/",
-    "image": "/imgs/a/chatgpt.png",
+    "name": "ClaudAI",
+    "link": "https://claude.ai/",
+    "image": "/imgs/a/claud.png",
     "categories": ["all", "media", "popular", "ai"]
   },
   {
