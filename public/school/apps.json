@@ -25,18 +25,12 @@
   },
   {
     "name": "Cool Math Games",
-    "link": "https://www.coolmathgames.com/cmg.png",
+    "link": "https://www.coolmathgames.com/",
     "image": "/imgs/a/cmg.png",
     "categories": ["all", "game"]
   },
   {
     "name": "Discord",
-    "link": "https://discord.com/",
-    "image": "/imgs/a/discord.png",
-    "categories": ["all", "social", "messaging", "media"]
-  },
-  {
-    "name": "Discord | Login",
     "link": "https://discord.com/login",
     "image": "/imgs/a/discord.png",
     "categories": ["all", "social", "messaging", "media"]
@@ -49,7 +43,7 @@
   },
   {
     "name": "Flix HQ",
-    "link": "https://flixhq.bz/",
+    "link": "https://flixhq.to/",
     "image": "/imgs/a/flixhq.png",
     "categories": ["all", "media", "popular"]
   },
@@ -76,12 +70,6 @@
     "link": "https://www.newgrounds.com/",
     "image": "/imgs/a/newgrounds.png",
     "categories": ["all", "media", "social"]
-  },
-  {
-    "name": "Paramount Plus",
-    "link": "https://www.paramountplus.com/",
-    "image": "/imgs/a/paramount.png",
-    "categories": ["all", "media"]
   },
   {
     "name": "Pinterest",
