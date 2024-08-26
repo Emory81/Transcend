@@ -6,15 +6,27 @@
     "categories": ["all", "media"]
   },
   {
-    "name": "Amazon Luna",
+    "name": "Luna (cloud gaming)",
     "link": "https://luna.amazon.com/",
     "image": "/imgs/a/amazon-luna.png",
     "categories": ["all", "game"]
   },
   {
-    "name": "ClaudAI",
+    "name": "CloudBase (cloud gaming)",
+    "link": "https://cloudbase.gg/",
+    "image": "/imgs/a/cloudbase.png",
+    "categories": ["all", "game"]
+  },
+  {
+    "name": "Xbox Cloud Gaming",
+    "link": "https://www.xbox.com/en-us/play/",
+    "image": "/imgs/a/xboxcloud.png",
+    "categories": ["all", "game"]
+  },
+  {
+    "name": "ClaudeAI (ChatGPT)",
     "link": "https://claude.ai/",
-    "image": "/imgs/a/claud.png",
+    "image": "/imgs/a/claude.png",
     "categories": ["all", "media", "popular", "ai"]
   },
   {
@@ -25,18 +37,12 @@
   },
   {
     "name": "Cool Math Games",
-    "link": "https://www.coolmathgames.com/cmg.png",
+    "link": "https://www.coolmathgames.com/",
     "image": "/imgs/a/cmg.png",
     "categories": ["all", "game"]
   },
   {
     "name": "Discord",
-    "link": "https://discord.com/",
-    "image": "/imgs/a/discord.png",
-    "categories": ["all", "social", "messaging", "media"]
-  },
-  {
-    "name": "Discord | Login",
     "link": "https://discord.com/login",
     "image": "/imgs/a/discord.png",
     "categories": ["all", "social", "messaging", "media"]
@@ -49,15 +55,9 @@
   },
   {
     "name": "Flix HQ",
-    "link": "https://flixhq.bz/",
+    "link": "https://flixhq.to/",
     "image": "/imgs/a/flixhq.png",
     "categories": ["all", "media", "popular"]
-  },
-  {
-    "name": "Geforce NOW",
-    "link": "https://play.geforcenow.com/",
-    "image": "/imgs/a/geoforcenow.png",
-    "categories": ["all", "game", "popular"]
   },
   {
     "name": "GitHub",
@@ -76,12 +76,6 @@
     "link": "https://www.newgrounds.com/",
     "image": "/imgs/a/newgrounds.png",
     "categories": ["all", "media", "social"]
-  },
-  {
-    "name": "Paramount Plus",
-    "link": "https://www.paramountplus.com/",
-    "image": "/imgs/a/paramount.png",
-    "categories": ["all", "media"]
   },
   {
     "name": "Pinterest",
