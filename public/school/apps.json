@@ -12,7 +12,7 @@
     "categories": ["all", "game"]
   },
   {
-    "name": "ClaudeAI",
+    "name": "ClaudeAI (ChatGPT)",
     "link": "https://claude.ai/",
     "image": "/imgs/a/claude.png",
     "categories": ["all", "media", "popular", "ai"]
