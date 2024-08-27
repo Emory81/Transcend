@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Proxy Browser</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #controls {
+        display: flex;
+        align-items: center;
+        background-color: #f0f0f0;
+        padding: 10px;
+      }
+      #urlDisplay {
+        flex-grow: 1;
+        margin-left: 10px;
+        overflow: auto;
+        white-space: nowrap;
+      }
+      #proxyFrame {
+        width: 100%;
+        height: calc(100vh - 40px); /* Adjusted for the height of the controls */
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="controls">
+      <button id="backButton">Back</button>
+      <button id="forwardButton">Forward</button>
+      <button id="reloadButton">Reload</button>
+      <div id="urlDisplay"></div>
+    </div>
+    <iframe id="proxyFrame"></iframe>
+    <script src="/uv/uv.bundle.js"></script>
+    <script src="/uv/uv.config.js"></script>
+    <script src="/school/js/surf.js"></script>
+    <script>
+      document.getElementById('backButton').addEventListener('click', () => {
+        window.history.back();
+      });
+      document.getElementById('forwardButton').addEventListener('click', () => {
+        window.history.forward();
+      });
+    </script>
+  </body>
+</html>

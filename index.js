@@ -32,7 +32,10 @@ app.get("/api/search=:query", async (req, res) => {
 });
 
 // copy and paste for more, but put it before this line
-app.use(express.static("./public"));
+app.use(express.static("./public", {
+  extensions: ['html']
+}));
+
 
 // bar
 server.on("request", (req, res) => {
