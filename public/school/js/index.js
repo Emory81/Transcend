@@ -5,24 +5,24 @@ function executeSearch(query) {
 
   if (urlPattern.test(query)) {
     // url
-    const encodedUrl = __uv$config.encodeUrl(query.startsWith("http") ? query : `http://${query}`);
-    console.log(encodedUrl);
-    window.location.href = __uv$config.prefix + encodedUrl;
+    const encodedUrl = encodeURIComponent(query.startsWith("http") ? query : `http://${query}`);
+    //console.log(encodedUrl);
+    window.location.href = `/browser?q=${encodedUrl}`;
   } else {
     // actual search
     const engine = localStorage.getItem("engine") || "https://duckduckgo.com/?q=";
     const searchUrl = `${engine}${query}`;
-    console.log(searchUrl);
-    const finalUrl = __uv$config.encodeUrl(searchUrl);
-    console.log(finalUrl);
-    window.location.href = __uv$config.prefix + finalUrl;
+    //console.log(searchUrl);
+    const finalUrl = encodeURIComponent(searchUrl);
+    //console.log(finalUrl);
+    window.location.href = `/browser?q=${finalUrl}`;
   }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   searchBox.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
-      console.log("Submitted query " + searchBox.value);
+      //console.log("Submitted query " + searchBox.value);
       const query = searchBox.value.trim();
       executeSearch(query);
     }
