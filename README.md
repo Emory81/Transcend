@@ -29,7 +29,7 @@ Here are some of our published proxy links:
 
 Have questions, need support, or want to hang out with other users? Join our Discord server!
 
-[![Discord](https://img.shields.io/discord/your-discord-id.svg?label=Discord&logo=discord&color=7289DA)](https://hw.billigerhost.com/discord)
+[![Discord](https://img.shields.io/discord/your-discord-id.svg?label=Discord&logo=discord&color=7289DA)](https://discord.com/invite/49tgKgJx9z)
 
 ## 🙌 Support
 
