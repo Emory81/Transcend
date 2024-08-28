@@ -8,13 +8,13 @@
 
 - **Blazing Fast Speeds:** Enjoy fast and seamless browsing through our optimized and load balanced servers.
 - **High Security:** HTTPS is used and Transcend is owned by Silvereen LLC.
-- **USA Location:** We host in NYC on Fiber Optics to provide the fastest seamless experience.
+- **USA Location:** We host in NYC on Fiber Optics to provide the most seamless experience.
 - **Easy to Use:** User friendly settings and interface.
 
 ## 🚀 Get Started
 
 1. **Choose a Unblocked Link:** Select one of our links below to start browsing securely.
-2. **Create:** Make your own link using the guid in our Discord.
+2. **Create:** Make your private link using the guide in our Discord.
 3. **Enjoy Secure Browsing:** Surf the web with enhanced privacy and security!
 
 ## 🌍 Available Proxies
