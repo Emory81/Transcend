@@ -17,7 +17,7 @@ app.use("/hwhelp", (req, res) => {
   res.redirect("/");
 });
 
-app.get('/links/check', (req, res) => {
+app.get('/links/', (req, res) => {
   const domain = req.query.domain;
   res.sendStatus(200);
 });
