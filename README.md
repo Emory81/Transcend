@@ -6,8 +6,8 @@
 
 ### Key Features:
 
-- **Blazing Fast Speeds:** Enjoy fast and seamless browsing through our optimized and load balanced servers.
-- **High Security:** HTTPS is used and Transcend is owned by Silvereen LLC.
+- **Blazing Fast Speeds:** Enjoy fast and seamless browsing through our optimized and load-balanced servers.
+- **High Security:** HTTPS is used and Transcend is **NOT** owned by Silvereen LLC. (I can't believe this guy approved a merge request without my approval.)
 - **USA Location:** We host in NYC on Fiber Optics to provide the most seamless experience.
 - **Easy to Use:** User friendly settings and interface.
 
